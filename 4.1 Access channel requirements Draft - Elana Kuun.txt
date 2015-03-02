@@ -1,0 +1,3 @@
+Access channel requirements
+Mobile phones, desktops and tablets should be able to log in through web browsers. This includes all leading web browsers, such as Google Chrome, Mozilla Firefox, Opera, Safari and Internet explorer.
+HTTP requests from web browsers and RESTful systems will therefore access this system's services.
