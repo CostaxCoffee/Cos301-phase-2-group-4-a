@@ -1,0 +1,12 @@
+ Integration Requirements
+Channels
+There are many channels that can be used  with buzz to allow the user to connect and interact with buzz
+Http:This will allow users to browse buzz and be able to navigate through the different parts of buzz by using a browser and the internet.HTTP is mainly used over the internet to link the end users to the buzz and allow them to access all the features.
+Intranet:Intranet will be a viable access channel to use buzz.Users will be able to access buzz on the campus of the university of Pretoria.This will be commonly used as there will be students who do not have access to internet at home will be able to access buzz on the local network of the university of Pretoria.
+Protocols
+-Http:Hypertext Transfer Protocol is the main protocol for all websites in the modern internet usage.It allows linking of the entire buzz forum together by a series of nodes which allows the users to easily navigate through the pages.
+HTTPS:This is a more secure version of Http.This will be used for when the user logs in or there is sensitive data being sent over the channels.HTTPS is a combination of HTTP and TSL and SSH.This protocol will ensure that data is safely transported.
+TCP/IP:The transfer communications and internet protocol are used hand in hand with http to help communicate with all the nodes.TCP is reliable and is able to check for errors in the transfer of the page over the IP.
+SMTP:Simple Mail Transfer Protocol is used to send emails.This protocol will be used to send emails to users of buzz to notify them of any changes.This will be easier then mailing manually and is prominently used in the web space.
+IPv6:This will allow the users trying to  access buzz to be redirected and to allow them to be redirected or routed to the correct space on the internet.This provides access to buzz through the use of http and the TCP/IP protocols.
+IPsec:Internet Protocol Security will allow for a secure IP and to ensure no harmful data is ever transmitted to the servers of buzz.-
