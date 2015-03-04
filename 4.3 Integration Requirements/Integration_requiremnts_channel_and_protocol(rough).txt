@@ -1,9 +1,7 @@
  Integration Requirements
 Channels
-There are many channels that can be used  with buzz to allow the user to connect and interact with buzz
-Http:This will allow users to browse buzz and be able to navigate through the different parts of buzz by using a browser and the internet.HTTP is mainly used over the internet to link the end users to the buzz and allow them to access all the features.
-Intranet:Intranet will be a viable access channel to use buzz.Users will be able to access buzz on the campus of the university of Pretoria.This will be commonly used as there will be students who do not have access to internet at home will be able to access buzz on the local network of the university of Pretoria.
-Protocols
+REST:Representational State Transfer architecture design to use as it is a simpler than SOAP and is a dynamic design.This will make it easier to implement and debug.A restful system can integrate well with HTTP as Rest sytems are optimized for web which makes it the perfect match.Restful systems needs to be client-server,so this means that there needs to be communication between the client and server which is vital in the buzz system.The communication between server and client requires the server to know the full state of the client to be able to process requests from the server.There is support for a lot of components to interact with each other and to be interchangeable.
+ Protocols
 -Http:Hypertext Transfer Protocol is the main protocol for all websites in the modern internet usage.It allows linking of the entire buzz forum together by a series of nodes which allows the users to easily navigate through the pages.
 HTTPS:This is a more secure version of Http.This will be used for when the user logs in or there is sensitive data being sent over the channels.HTTPS is a combination of HTTP and TSL and SSH.This protocol will ensure that data is safely transported.
 TCP/IP:The transfer communications and internet protocol are used hand in hand with http to help communicate with all the nodes.TCP is reliable and is able to check for errors in the transfer of the page over the IP.
