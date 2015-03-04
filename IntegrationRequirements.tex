@@ -1,10 +1,35 @@
- Integration Requirements
-Channels
-REST:Representational State Transfer architecture design to use as it is a simpler than SOAP and is a dynamic design.This will make it easier to implement and debug.A restful system can integrate well with HTTP as Rest sytems are optimized for web which makes it the perfect match.Restful systems needs to be client-server,so this means that there needs to be communication between the client and server which is vital in the buzz system.The communication between server and client requires the server to know the full state of the client to be able to process requests from the server.There is support for a lot of components to interact with each other and to be interchangeable.
- Protocols
--Http:Hypertext Transfer Protocol is the main protocol for all websites in the modern internet usage.It allows linking of the entire buzz forum together by a series of nodes which allows the users to easily navigate through the pages.
-HTTPS:This is a more secure version of Http.This will be used for when the user logs in or there is sensitive data being sent over the channels.HTTPS is a combination of HTTP and TSL and SSH.This protocol will ensure that data is safely transported.
-TCP/IP:The transfer communications and internet protocol are used hand in hand with http to help communicate with all the nodes.TCP is reliable and is able to check for errors in the transfer of the page over the IP.
-SMTP:Simple Mail Transfer Protocol is used to send emails.This protocol will be used to send emails to users of buzz to notify them of any changes.This will be easier then mailing manually and is prominently used in the web space.
-IPv6:This will allow the users trying to  access buzz to be redirected and to allow them to be redirected or routed to the correct space on the internet.This provides access to buzz through the use of http and the TCP/IP protocols.
-IPsec:Internet Protocol Security will allow for a secure IP and to ensure no harmful data is ever transmitted to the servers of buzz.
+
+\subsubsection{Channels}
+\begin{itemize}
+\item REST: Representational State Transfer architecture design to use as it is a simpler than SOAP and is a dynamic design.This will make it easier to implement and debug.A restful system can integrate well with HTTP as Rest systems are optimized for web which makes it the perfect match.Restful systems needs to be client-server,so this means that there needs to be communication between the client and server which is vital in the buzz system.The communication between server and client requires the server to know the full state of the client to be able to process requests from the server.There is support for a lot of components to interact with each other and to be interchangeable.
+\subsubsection{Protocols}
+\item Http: Hypertext Transfer Protocol is the main protocol for all websites in the modern internet usage.It allows linking of the entire buzz forum together by a series of nodes which allows the users to easily navigate through the pages.
+\item HTTPS: This is a more secure version of Http.This will be used for when the user logs in or there is sensitive data being sent over the channels.HTTPS is a combination of HTTP and TSL and SSH.This protocol will ensure that data is safely transported.
+\item TCP/IP: The transfer communications and internet protocol are used hand in hand with http to help communicate with all the nodes.TCP is reliable and is able to check for errors in the transfer of the page over the IP.
+\item SMTP: Simple Mail Transfer Protocol is used to send emails.This protocol will be used to send emails to users of buzz to notify them of any changes.This will be easier then mailing manually and is prominently used in the web space.
+\item IPv6: This will allow the users trying to  access buzz to be redirected and to allow them to be redirected or routed to the correct space on the internet.This provides access to buzz through the use of http and the TCP/IP protocols.
+\item IPsec: Internet Protocol Security will allow for a secure IP and to ensure no harmful data is ever transmitted to the servers of buzz.
+\end{itemize}
+
+\subsubsection{API Specifications}
+\begin{itemize}
+\item WSDL - WSDL will be used to describe the functionality and the operations provided by the web-based service (Buzz system).
+\item CORBA - CORBA will mediate the communication between the diverse systems that will be integrated to the Buzz system to provide added functionality and data for the operation of the system.
+\item IDL - This will be used for data analysis purposes for the data passed from the data source to the Buzz system and any other form of data required by the system.
+\end{itemize}
+
+\subsubsection{Integration Quality Requirements}
+
+
+Integration Approach
+The ideal Integration approach that will cater for the needs of the Buzz system is the Document-based Integration because only essential data that is required by the system will be provided by the data source.
+
+The following requirements need to be fulfilled to ensure optimal operation of the system after integration:
+\begin{itemize}
+
+\item Performance - The integration should not impact poorly on the performance of the Buzz system. The data required should be easily accessible at all times when requested by the system without compromising the Buzz systems ability to evaluate user credentials or any functionality that is dependent on the data source.
+\item Scalability - The data source will contain a large volume of records pertaining to the students registered for the module making use of the Buzz system and therefore has to have the capability to handle a large data set and multiple concurrent users.
+\item Reliability - When the Buzz system requires certain records in an efficient timely manner, reliability is also a major concern. To allow proper accessibility, functionality and productivity of the system, reliable data has to be delivered at all times or else the whole system will not operate as desired.
+\item Security - The data provided will come from a reliable data source that has sensitive information regarding students who are registered and the details of the system itself. During the integration process, the Buzz system cannot compromise the data source by feeding malicious data to intentionally or unintentionally extract valuable information. The Buzz system can only access records that the data source deems as essential for the use of the Buzz system.
+\item Auditability - Every request that is passed by the Buzz system for sensitive data has to be evaluated and assessed to determine whether or not the Buzz system has the rights to obtain that data. Certain requested have to be logged if they produce certain errors or faults in the system that could compromise any of the quality requirements.
+\end{itemize}
