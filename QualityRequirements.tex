@@ -7,24 +7,24 @@
 %\begin{document}
 
 \begin{itemize}
-	\item Scalability
+	\item \textbf{Scalability}
 		With huge volumes of students expected the system must be scalable. We will use a scalable storage solution combined with LB(load Balancers) to accommodate the extra traffic to the network. Also using stateless nodes to redirect query to the relevant modules of our system.
-	\item Performance Requirements
+	\item \textbf{Performance Requirements}
 		We will measure the response times using special tools to obtain the time from a request to a full page load. The servers performance shall be measured using the server logs. We cannot improve performance if we cannot measure it. 
-	\item Maintanability
+	\item \textbf{Maintanability}
 		The system will be comprise of modules and using a Singleton design pattern to handle communication. Thus a centralised node that all communication will pass through between modules. This will allow us the easily edit/add/remove modules from the system.
-	\item Reliability and Availability
+	\item \textbf{Reliability and Availability}
 		Reliability will definitely be a priority. We will use a server that guarantees us atleast 99 per uptime. This will probably be a University of pretoria server.
-	\item Security
+	\item \textbf{Security}
 		We will use the HTTPS protocol to ensure that all traffic is encrypted. Also a user authentication will play a vital roll to ensure that there is no unauthorised users. The firewall must only allow the relevant ports to pass through to our server. 
-	\item Monitorability and Auditability
+	\item \textbf{Monitorability and Auditability}
 		The server logs will allow us to monitor the system. These will be provided to us by the systems reporting module. Linux server logs will also allow us to audit the system and monitor its state.
-	\item Testability
+	\item \textbf{Testability}
 		Each function will be tested. But mathematical proofs for correctness is not necessary. Each part of the system must be tested. 
-	\item Usability
+	\item \textbf{Usability}
 		The web pages must be usable and follow a responsive design approach. This means the pages will display correctly on each screen size. We will follow google material design standards to ensure responsiveness.
-	\item Integrability
-		The system must be able to integrate into an existing computer science website. We must meet their standards when it comes to obtain user information. We will conform to all communication standards to the system. Also provide our own integration library which will gain access through out singleton node.
+	\item \textbf{Integrability}
+		The system must be able to integrate into an existing computer science website. We must meet their standards when it comes to obtaining user information. We will conform to all communication standards to the system. Also provide our own integration library which will gain access through out singleton node.
 \end{itemize}
 
 %\end{document}
