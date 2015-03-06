@@ -8,9 +8,9 @@
 
 \begin{itemize}
 	\item \textbf{Scalability}
-		With huge volumes of students expected the system must be scalable. We will use a scalable storage solution combined with LB(load Balancers) to accommodate the extra traffic to the network. Also using stateless nodes to redirect query to the relevant modules of our system.
+		There is a anticipated increase in entry volume. We are expecting an exponential increase in students using the system. It is predicted that this year 750 students are registered for COS132 by next year there will be close to a thousand. We expect a 25 percent growth rate over the next two years. The system must scale and incorporate with the standard Computer Science website. 
 	\item \textbf{Performance Requirements}
-		We will measure the response times using special tools to obtain the time from a request to a full page load. The servers performance shall be measured using the server logs. We cannot improve performance if we cannot measure it. 
+		Security, web portal and personalised applications will access the the directory server. They will performe various functions such as file access and Database access.
 	\item \textbf{Maintanability}
 		The system will be comprise of modules and using a Singleton design pattern to handle communication. Thus a centralised node that all communication will pass through between modules. This will allow us the easily edit/add/remove modules from the system.
 		\begin{itemize}
@@ -22,7 +22,13 @@
 	\item \textbf{Reliability and Availability}
 		Reliability will definitely be a priority. We will use a server that guarantees us at least 99 per uptime. This will probably be a University of pretoria server. Apply java OO and structured programming practices.
 	\item \textbf{Security}
-		We will use the HTTPS protocol to ensure that all traffic is encrypted. Also a user authentication will play a vital roll to ensure that there is no unauthorised users. The firewall must only allow the relevant ports to pass through to our server. 
+		Clients must not have file access to the server and the root assess of the system must only be allowed to authorised personal. Designing strong password policies and using \textbf{security methods}.
+		\begin{itemize}
+			\item Authentication
+			\item Encryption
+			\item Access control
+			\item Auditing
+		\end{itemize}
 	\item \textbf{Monitorability and Auditability}
 		The server logs will allow us to monitor the system. These will be provided to us by the systems reporting module. Linux server logs will also allow us to audit the system and monitor its state.
 	\item \textbf{Testability}
