@@ -1,7 +1,14 @@
-In this section discuss any architectural patterns or styles you have chosen to use together with the
-rationale for using them.
-For example, you might have decided to use layering in order to have lower level layers reusable
-across different higher level layers (e.g. have a services layer usable by a web front-end and a
-mobile-device client).
-Discuss the elements of the architectural pattern (e.g. the different layers) and how these elements
-are connected (e.g. the integration channels between the layers).
+
+\begin{flushleft}
+			
+\subsection*{Blackboard pattern} 
+To archive scalability, blackboard multiple processes to work closer together on separate threads, introduction of this pattern will help out multiple process of the buzz system to run efficiently as the pattern emphasizes multiple process working together
+
+\subsection*{Layered Architecture}
+System will be separated through layers; there will be User Interface  layer, services layer and process layer which includes Business logic and data. User Interface layer will handle interaction like receiving input from users, the service layer will provide the human layer with services like opening a buzz space and commenting on the buzz thread and lastly process layer will process services rendered for authorization and quality check like plagiarism. Separation through layers will enhance performance, manageability and reusability.
+
+\subsection*{Client/Server} 
+For communication of the server which is buzz system with users, this pattern have benefits of security as all data will be stored on the buzz system server and ease of maintenance as server is responsible of repair with client knowing of damage.
+
+	
+\end{flushleft}
