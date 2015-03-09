@@ -1,4 +1,4 @@
 1.5 Access and Integration Channels
 
-Clients will access the system by using mobile phones, tablets or desktops and logging in through a browser. Therefore HTTP requests from web browsers will access the system's services. LDAP will be used to access student information that is stored in a database on a server.
+Clients will access the system by using mobile phones, tablets or desktops to log in through a web browser. Therefore HTTPS requests from web browsers will access the system’s services. LDAP will also be used to access student information that is stored in a database on a server. Java EE, Apache Server, HTTPS and Java Persistence API will be used for these actions.
 
