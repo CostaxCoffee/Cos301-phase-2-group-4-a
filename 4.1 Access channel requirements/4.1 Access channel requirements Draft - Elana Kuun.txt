@@ -1,4 +1,3 @@
-The system will be accessed through:
-•	Mobile devices, desktops and tablets by using web browsers (this includes all leading web browsers such as Google chrome, Mozilla Firefox, Opera, Safari and Internet explorer).
-•	RESTful systems.
-•	HTTP requests.
+﻿Access channel requirement
+1.1.1 Human Access Channels
+The system will be accessed through mobile phones, desktops and tablets. Clients will log in through a web browser. This includes all leading web browsers, such as Google Chrome, Mozilla Firefox, Opera, Safari and Internet explorer. A thin client should be provided.
