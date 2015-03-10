@@ -6,66 +6,14 @@
 
 %\begin{document}
 
-\begin{itemize}
-	\item \textbf{Scalability and Performance}
-		\begin{itemize}
-			\item Real time access: combining system with Cloud computing
-			\item Data Partitioning: Spread data into multiple DB
-			\item Cache Engine (Dynamic Cache): instead of redo the same execution for same input parameters, we can remember the previous execution's result
-			\item Resources Pool: DBSession and TCP connection are expensive to create, so reuse them across multiple requests
-			\item Asynchronous Processing: continue with other processes, whilst waiting on the response of the other
-		\end{itemize}
-	\item \textbf{Maintanability}
-		\begin{itemize}
-			\item Design for maintainability from the outset
-			\item Iterative development and regular reviews improve quality, e.g. Using the agile approach
-			\item Code readable that is easy to understand
-			\item Provide relevant documentation helps developers understand the software for further maintenance
-			\item Make use of automated builds make the code easy to compile
-			\item Make use of automated tests make it easy to validate changes
-		\end{itemize}
-	\item \textbf{Reliability}
-		\begin{itemize}
-			\item Use good architectural infrastructure
-			\item Build management information into the application
-			\item Use redundancy for reliability, that is have multiple copies or services of the same type running at the same time
-			\item Use quality development tools, this includes HTML and the DOM, JavaScript debugging, profiling and auditing and so on
-			\item Use consistent error handling, and provide meaningful error messages
-		\end{itemize}
-	\item \textbf{Availability}
-		\begin{itemize}
-			\item Elimination of single points of failure, by having multiple copies or services of the same type running at the same time, as specified before. So that when one service cannot be provided, then others or possibly the same services can be provided
-			\item Provide reliable crossover, enabling uptime to remain as high as possible even during maintenance
-			\item Detection of failures as they occur
-		\end{itemize}
+Performance is one of the most important quality requirements that must be fully incorporated into the system.  This includes real time access; student will be reluctant to use a system with frequent delays. Asynchronous processing will increase the systems performance, so will data partitioning, resources pooling and others specified above.  Performance is closely related to scalability, so these tactics will also enable scalability.\\
 	
-	\item \textbf{Security}
-		\begin{itemize}
-			\item Input Validation
-			\item Authentication
-			\item Authorization
-			\item Sensitive Data (Confidential information disclosure and data tampering)
-			\item Session Management
-			\item Cryptography
-			\item Parameter Manipulation
-			\item Exception Management
-			\item Auditing and Logging
-		\end{itemize}
-	\item \textbf{Testability and Integrability}
-		\begin{itemize}
-			\item Isolate the Ugly Stuff: "ugly stuff" is any kind of code or infrastructure that is complicated or laborious or just plain inconvenient to get into a test harness, or that makes tests run very slowly.
-			\item Using Fakes to Establish Boundary Conditions - For instance instead of doing the data directly delegate to some other services 
-			\item Separate Deciding from Doing: an action and deciding to take an action treated as two separate responsibilities.
-			\item Small Tests before Big Tests: Small test often point you direct to point of failure or error, where else Big test have a lot of factors to consider, which makes debugging hard, so more small test and leading to easy debugging for Big test
+Maintenance becomes easy if you design for maintainability from the outset, and be agile.
+Coding readable code that is easy to understand reduces documentation, of which is ideal, but unfortunately documentation is still required.\\
+ 	
+Systems that are available, reliable and secure encourage frequent usage.
+Student study or work all day, and mostly at night, so access will be available at all times. As much as a security is top priority, access to the system should be short and one-time sign-in’s, but in the background intense security measures can take place, e.g. input validation, authentication, and encryption.\\
 
-		\end{itemize}
-	\item \textbf{Usability}
-		\begin{itemize}
-			\item Look-and-feel: includes making navigation easy, useful interface cues, good color choice, for easy reading and scanning 
-			\item Navigation: to tell the user where they are, and enable the user to go somewhere else
-			\item Interface design: inform users of the task the interface can be used to complete and provide feedback to let users now what has been done
-			\item Information architecture: organize or structure contact pleasant to read manner, and make use of short phrases as much as possible
-		\end{itemize}
-\end{itemize}
+It is also ideal to have small test, to test each individual component or functionality, so as to make it easy to trace errors, if none, the big tests can be done. Testing is for developers but usability is strictly about users, so the systems must be easy to use, easy to remember how to use, as such will encourage users to use the system again.\\
 
 %\end{document}
