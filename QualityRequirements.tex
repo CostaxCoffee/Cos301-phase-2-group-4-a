@@ -12,7 +12,7 @@
 		\begin{itemize}
 			\item{Tactics or Strategies}
 				\begin{itemize}
-					\item Data Partitioning: Spread data into multiple DB.
+					\item Data Partitioning: Spread data into multiple databases.
 					\item Cache Engine (Dynamic Cache): instead of redo the same execution for same input parameters, we can remember the previous execution's result.
 					\item Resources Pool: DBSession and TCP connection are expensive to create, so reuse them across multiple requests.
 				\end{itemize}
@@ -26,13 +26,13 @@
 				\end{itemize}
 		\end{itemize}
 \subsubsection{Performance}
-		We will require a response time of no longer than a 1 sec. We expect about a maximum 100 searches of forum requests per second.With an average of about 5 requests per second. We however do not expect unindexed searches. To achieve both scalability and performance the following will be incoporated into the system.
+		We will require a response time of no longer than 1 second. We expect about a maximum 100 searches of forum requests per second.With an average of about 5 requests per second. We however do not expect unindexed searches. To achieve both moderate scalability and performance the following will be incoporated into the system.
 		\begin{itemize}
 	\item{Tactics or Strategies}
 		\begin{itemize}
 			\item Real time access: combining system with Cloud computing.
-			\item Data Partitioning: Spread data into multiple DB.
-			\item Cache Engine (Dynamic Cache): instead of redo the same execution for same input parameters, we can remember the previous execution's result.
+			\item Data Partitioning: Spread data into multiple databases.
+			\item Cache Engine (Dynamic Cache): instead of redoing the same execution for same input parameters, we can remember the previous execution's result.
 			\item Resources Pool: DBSession and TCP connection are expensive to create, so reuse them across multiple requests.
 			\item Asynchronous Processing: continue with other processes, whilst waiting on the response of the other.
 		\end{itemize}
@@ -46,7 +46,7 @@
 		\end{itemize}
 \end{itemize}
 \subsubsection{Maintanability}
-		The system will be comprise of modules and using a Singleton design pattern to handle communication. Thus a centralised node that all communication will pass through between modules. This will allow us the easily edit/add/remove modules from the system.
+		The system will be made up from various modules and using a Singleton design pattern to handle communication. Thus a centralised node that all communication will pass through between modules. This will allow us the easily edit/add/remove modules from the system.
 		\begin{itemize}
 	\item{Tactics or Strategies}
 		\begin{itemize}
@@ -64,7 +64,7 @@
 		\end{itemize}
 \end{itemize}
 \subsubsection{Reliability and Availability}
-		Reliability will definitely be a priority. We will use a server that guarantees us at least 99 per uptime. This will probably be a University of pretoria server.
+		Reliability will definitely be a priority. We will use a server that guarantees us at least 99 percent uptime. This server will be provided by the client.
 		\begin{itemize}
 	\item{Tactics or Strategies}
 		\begin{itemize}
@@ -72,7 +72,7 @@
 			\item Use good architectural infrastructure.
 			\item Build management information into the application.
 			\item Use redundancy for reliability, that is have multiple copies or services of the same type running at the same time.
-			\item Use quality development tools, this includes HTML and the DOM, JavaScript debugging, profiling and auditing and so on.
+			\item Use quality development tools.
 			\item Use consistent error handling, and provide meaningful error messages.
 			\item Elimination of single points of failure, by having multiple copies or services of the same type running at the same time, as specified before. So that when one service cannot be provided, then others or possibly the same services can be provided.
 			\item Provide reliable crossover, enabling uptime to remain as high as possible even during maintenance.
@@ -89,7 +89,7 @@
 \end{itemize}
 		
 \subsubsection{Security}
-		Clients must not have file access to the server and the root assess of the system must only be allowed to authorised personal. Designing strong password policies and using \textbf{security methods}.
+		Clients must not have file access to the server and the root assess of the system must only be allowed to authorised personnel. Designing strong password policies and using \textbf{security methods}.
 		\begin{itemize}
 	\item{Tactics or Strategies}
 		\begin{itemize}
@@ -132,7 +132,7 @@
 \end{itemize}
 		
 \subsubsection{Testablity and Integrability}
-		Each function will be tested. But mathematical proofs for correctness is not necessary. Each part of the system must be tested. The system must be able to integrate into an existing computer science website. We must meet their standards when it comes to obtaining user information. We will conform to all communication standards to the system. Also provide our own integration library which will gain access through out singleton node. Lastly the following will enable the system to be both a testable and integrable
+		Each function will be tested. But mathematical proofs for correctness is not necessary. Each part of the system must be tested. The system must be able to integrate into an existing computer science website. We must meet their standards when it comes to obtaining user information. We will conform to all communication standards to the system. The system must also provide its own integration library which will gain access throughout the singleton node. Lastly the following will enable the system to be both testable and integratation friendly.
 		\begin{itemize}
 	\item{Tactics or Strategies}
 		\begin{itemize}
