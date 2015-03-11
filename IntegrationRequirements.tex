@@ -26,18 +26,4 @@
 \item Interactive Data Language(IDL) - This will be used for data analysis purposes for the data passed from the data source to the Buzz system and any other form of data required by the system.
 \end{itemize}
 
-\subsubsection{Integration Quality Requirements}
 
-
-Integration Approach
-The ideal Integration approach that will cater for the needs of the Buzz system is the Document-based Integration because only essential data that is required by the system will be provided by the data source.
-
-The following requirements need to be fulfilled to ensure optimal operation of the system after integration:
-\begin{itemize}
-
-\item Performance - Document-based Integration allows for the document to be provided by the data source, therefore the performance of the external data source will not impact heavily on the performance of the Buzz system. Data required can be retrieved by multiple users which will not affect the systems performance by slowing down the retrieval process. 
-\item Scalability - The data source will contain a large volume of records pertaining to the students registered for the module making use of the Buzz system and therefore has to have the capability to handle a large data set and multiple concurrent users.
-\item Reliability - When the Buzz system requires certain records in an efficient timely manner, reliability is also a major concern. To allow proper accessibility, functionality and productivity of the system, reliable data has to be delivered at all times or else the whole system will not operate as desired.
-\item Security - The data provided will come from a reliable data source that has sensitive information regarding students who are registered and the details of the system itself. During the integration process, the Buzz system cannot compromise the data source by feeding malicious data to intentionally or unintentionally extract valuable information. The Buzz system can only access records that the data source deems as essential for the use of the Buzz system.
-\item Auditability - Every request that is passed by the Buzz system for sensitive data has to be evaluated and assessed to determine whether or not the Buzz system has the rights to obtain that data. Certain requests have to be logged if they produce certain errors or faults in the system that could compromise any of the quality requirements.
-\end{itemize}

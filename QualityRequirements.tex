@@ -6,12 +6,29 @@
 
 %\begin{document}
 
-\begin{itemize}
-	\item \textbf{Scalability}
+\subsubsection{Scalability}
 		There is a anticipated increase in entry volume. We are expecting an exponential increase in students using the system. It is predicted that this year 750 students are registered for COS132 by next year there will be close to a thousand. We expect a 25 percent growth rate over the next two years. 			\cite{classRepMeeting}
 		The system must scale and incorporate with the standard Computer Science website. 
-	\item \textbf{Performance Requirements}
+		\begin{itemize}
+			\item{Tactics or Strategies}
+				\begin{itemize}
+					\item Data Partitioning: Spread data into multiple DB.
+					\item Cache Engine (Dynamic Cache): instead of redo the same execution for same input parameters, we can remember the previous execution's result.
+					\item Resources Pool: DBSession and TCP connection are expensive to create, so reuse them across multiple requests.
+				\end{itemize}
+			\item{Patterns or Styles}
+				\begin{itemize}
+					\item 
+				\end{itemize}
+			\item{Integration}
+				\begin{itemize}
+					\item The data source will contain a large volume of records pertaining to the students registered for the module making use of the Buzz system and therefore has to have the capability to handle a large data set and multiple concurrent users.
+				\end{itemize}
+		\end{itemize}
+\subsubsection{Performance}
 		We will require a response time of no longer than a 1 sec. We expect about a maximum 100 searches of forum requests per second.With an average of about 5 requests per second. We however do not expect unindexed searches. To achieve both scalability and performance the following will be incoporated into the system.
+		\begin{itemize}
+	\item{Tactics or Strategies}
 		\begin{itemize}
 			\item Real time access: combining system with Cloud computing.
 			\item Data Partitioning: Spread data into multiple DB.
@@ -19,8 +36,19 @@
 			\item Resources Pool: DBSession and TCP connection are expensive to create, so reuse them across multiple requests.
 			\item Asynchronous Processing: continue with other processes, whilst waiting on the response of the other.
 		\end{itemize}
-	\item \textbf{Maintanability}
+	\item{Patterns or Styles}
+		\begin{itemize}
+			\item
+		\end{itemize}
+	\item{Integration}
+		\begin{itemize}
+			\item Document-based Integration allows for the document to be provided by the data source, therefore the performance of the external data source will not impact heavily on the performance of the Buzz system. Data required can be retrieved by multiple users which will not affect the systems performance by slowing down the retrieval process. 
+		\end{itemize}
+\end{itemize}
+\subsubsection{Maintanability}
 		The system will be comprise of modules and using a Singleton design pattern to handle communication. Thus a centralised node that all communication will pass through between modules. This will allow us the easily edit/add/remove modules from the system.
+		\begin{itemize}
+	\item{Tactics or Strategies}
 		\begin{itemize}
 			\item Design for maintainability from the outset.
 			\item Iterative development and regular reviews improve quality, e.g. Using the agile approach.
@@ -29,10 +57,16 @@
 			\item Make use of automated builds make the code easy to compile.
 			\item Make use of automated tests make it easy to validate changes.
 			\item Application Architecture Standards: Multilayer design compliance.
-			
 		\end{itemize}
-	\item \textbf{Reliability and Availability}
+	\item{Patterns or Styles}
+		\begin{itemize}
+			\item
+		\end{itemize}
+\end{itemize}
+\subsubsection{Reliability and Availability}
 		Reliability will definitely be a priority. We will use a server that guarantees us at least 99 per uptime. This will probably be a University of pretoria server.
+		\begin{itemize}
+	\item{Tactics or Strategies}
 		\begin{itemize}
 			\item Apply java OO and structured programming practices.
 			\item Use good architectural infrastructure.
@@ -44,9 +78,20 @@
 			\item Provide reliable crossover, enabling uptime to remain as high as possible even during maintenance.
 			\item Detection of failures as they occur.
 		\end{itemize}
+	\item{Patterns or Styles}
+		\begin{itemize}
+			\item
+		\end{itemize}
+	\item{Integration}
+		\begin{itemize}
+			\item When the Buzz system requires certain records in an efficient timely manner, reliability is also a major concern. To allow proper accessibility, functionality and productivity of the system, reliable data has to be delivered at all times or else the whole system will not operate as desired.
+		\end{itemize}
+\end{itemize}
 		
-	\item \textbf{Security}
+\subsubsection{Security}
 		Clients must not have file access to the server and the root assess of the system must only be allowed to authorised personal. Designing strong password policies and using \textbf{security methods}.
+		\begin{itemize}
+	\item{Tactics or Strategies}
 		\begin{itemize}
 			\item Input Validation
 			\item Authentication
@@ -60,27 +105,46 @@
 			\item Access control
 			\item Auditing
 		\end{itemize}
-	\item \textbf{Monitorability and Auditability}
-		All changes to the forums must be recorded and logged appropriately. This system must be fully audible. 
-		\item \textbf{Usability}
+	\item{Patterns or Styles}
+		\begin{itemize}
+			\item
+		\end{itemize}
+	\item{Integration}
+		\begin{itemize}
+			\item  The data provided will come from a reliable data source that has sensitive information regarding students who are registered and the details of the system itself. During the integration process, the Buzz system cannot compromise the data source by feeding malicious data to intentionally or unintentionally extract valuable information. The Buzz system can only access records that the data source deems as essential for the use of the Buzz system.
+		\end{itemize}
+\end{itemize}
+
+\subsubsection{Usability}
 		The web pages must be usable and follow a responsive design approach. This means the pages will display correctly on each screen size. We will follow google material design standards to ensure responsiveness.
+		\begin{itemize}
+	\item{Tactics or Strategies}
 		\begin{itemize}
 			\item Look-and-feel: includes making navigation easy, useful interface cues, good color choice, for easy reading and scanning.
 			\item Navigation: to tell the user where they are, and enable the user to go somewhere else.
 			\item Interface design: inform users of the task the interface can be used to complete and provide feedback to let users now what has been done.
 			\item Information architecture: organize or structure contact pleasant to read manner, and make use of short phrases as much as possible.
 		\end{itemize}
-	\item \textbf{Testability}
-		Each function will be tested. But mathematical proofs for correctness is not necessary. Each part of the system must be tested. 
-	\item \textbf{Integrability}
-		The system must be able to integrate into an existing computer science website. We must meet their standards when it comes to obtaining user information. We will conform to all communication standards to the system. Also provide our own integration library which will gain access through out singleton node. Lastly the following will enable the system to be both a testable and integrable
+	\item{Patterns or Styles}
+		\begin{itemize}
+			\item
+		\end{itemize}
+\end{itemize}
+		
+\subsubsection{Testablity and Integrability}
+		Each function will be tested. But mathematical proofs for correctness is not necessary. Each part of the system must be tested. The system must be able to integrate into an existing computer science website. We must meet their standards when it comes to obtaining user information. We will conform to all communication standards to the system. Also provide our own integration library which will gain access through out singleton node. Lastly the following will enable the system to be both a testable and integrable
+		\begin{itemize}
+	\item{Tactics or Strategies}
 		\begin{itemize}
 			\item Isolate the Ugly Stuff: "ugly stuff" is any kind of code or infrastructure that is complicated or laborious or just plain inconvenient to get into a test harness, or that makes tests run very slowly.
 			\item Using Fakes to Establish Boundary Conditions: For instance instead of doing the data directly delegate to some other services.
 			\item Separate Deciding from Doing: an action and deciding to take an action treated as two separate responsibilities.
 			\item Small Tests before Big Tests: Small test often point you direct to point of failure or error, where else Big test have a lot of factors to consider, which makes debugging hard, so more small test and leading to easy debugging for Big test.
-
-		\end{itemize} 
+		\end{itemize}
+	\item{Patterns or Styles}
+		\begin{itemize}
+			\item
+		\end{itemize}
 \end{itemize}
 
 %\end{document}
