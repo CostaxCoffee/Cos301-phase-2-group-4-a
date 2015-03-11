@@ -1,2 +1,2 @@
 ﻿Integration and access channel requirements
-The system must be able to access a database on a server to retrieve student information. This will be achieved by using LDAP. Humans can access the system by using mobile phones, desktops and tablets to log in through a web browser. This includes all leading web browsers, such as Google Chrome, Mozilla Firefox, Opera, Safari and Internet explorer. HTTPS will be used to send between the browser and the system.
+ Humans can access the system by using mobile phones, desktops and tablets to log in through a web browser. This includes all leading web browsers, such as Google Chrome, Mozilla Firefox, Opera, Safari and Internet explorer. HTTPS will be used to send between the browser and the system.
