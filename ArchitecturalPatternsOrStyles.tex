@@ -1,10 +1,29 @@
 
-\subsection{Layered Architecture}
+\subsection{Authentication Enforcer} 
+\begin{flushleft}
+The Authentication Enforcer pattern handles the authentication logic across all of the actions within the Web tier. It assumes responsibility for authentication and verification of user identity and delegates direct interaction with the security provider to a helper class. This applies not only to password-based authentication, but also to client certificate-based authentication and other authentication schemes that provide a user's identity, such as Kerberos.
+This pattern will help us improve security of the system while keeping the scalability and performance well maintained since the Authentication Enforcer pattern provides a consistent and structured way to handle authentication and verification of requests across actions within Web-tier components and also supports MVC architecture without duplicating the code.
+\end{flushleft}
 
-System will be separated through layers; there will be User Interface  layer, services layer and process layer which includes Business logic and data. User Interface layer will handle interaction like receiving input from users, the service layer will provide the human layer with services like opening a buzz space and commenting on the buzz thread and lastly process layer will process services rendered for authorization and quality check like plagiarism. Separation through layers will enhance performance, manageability and reusability.
-	
-\subsection{Client/Server} 
-For communication of the server which is buzz system with users, this pattern have benefits of security as all data will be stored on the buzz system server and ease of maintenance as server is responsible of repair with client knowing of damage.
+\subsection{Dependency Injection}
+\begin{flushleft}
+Dependency injection implements inversion of control for software libraries.\\
+The design pattern allows a client to remove all
+knowledge of a concrete implementation that it needs to use. This helps isolate the client
+from the impact of design changes and defects. It promotes re-usability, testability and
+maintainability.
+The benefits of using Dependency Injection in our system, is that it will ensure loose coupling of code between the different modules that need to be implemented. Decoupling of code will ensure that the code in the system are cleaner, easier to modify when required and easier to adapt and implement for reuse.
+\end{flushleft}
+
+\subsection{Flyweight Design Pattern}
+\begin{flushleft}
+A flyweight is an object that minimizes memory use by sharing as much data as possible with other similar objects; it is a way to use objects in large numbers when a simple repeated representation would use an unacceptable amount of memory. This is how we will improve on performance and the scalability of the system as resources are used efficiently and effectively.
+\end{flushleft}
+
+\subsection {Mock Object}
+Mock objects are simulated objects that mimic the behavior of real objects in controlled ways.
+We have to create a mock object to test the behavior of some other object and see how it reacts
+to certain conditions.
 
 \subsection {Model-View-Controller (MVC)}
 
@@ -20,17 +39,12 @@ Adhering to the MVC design pattern provides us with numerous benefits:
 
 	\begin{figure}[H]
 		\centering\graphicspath{ {images/} }
-		\includegraphics[width=\textwidth, height=15cm]{MVC.jpg}
-	   	\caption{Java-EE system architecture}.
+		\includegraphics[width=\textwidth,height=15cm]{MVC.jpg}
+	   	\caption{Java-EE system architecture}
 	\end{figure}
 
-The system will be designed using the MVC architectural pattern combined
-with a multi-tier/layered architectural pattern to form what is known as the Java-EE system architecture.
-This will allows the user to be decoupled from the server and the view, the controller and the model each 
-to have their own set of layers as described below.
-
 \textbf{View (Client Tier)}\\
-This tier runs on the user system and encapsulates the various components that a user system may use to access the Java EE server-side tiers. These components include dynamic web pages, Java applications and Java applets. 
+This tier runs on the user system and encapsulates the various components that a user system may use to access the Java EE server-side tiers. These components include dynamic web pages, Java applications and Java applets.
 
 \textbf{Controller (Java-EE server)}
 
@@ -45,16 +59,12 @@ The middle tier's business functions handle client requests and process applicat
 \end{itemize}
 
 \textbf{Model (Enterprise Information Systems (EIS) Tier)}\\
-The EIS tier consists of database servers, enterprise resource planning systems, and other legacy data sources. These resources typically are located on a separate machine than the Java EE server, and are accessed by components on the business tier.
+The EIS tier consists of database servers, enterprise resource planning systems, and other legacy data sources. These resources typically are located on a separate machine than the Java EE server, and are accessed by components on the business tier. This will be the university's server for the mini project.
 
 \end{flushleft}
 
-\subsection{Dependency Injection}
 
-\begin{flushleft}
 
-Dependency injection implements inversion of control for software libraries, where the caller delegates to an external framework the control flow of discovering and importing a service or software module.\\
-The benefits of using Dependancy Injection in our system, is that it will ensure loose coupling of code between the different modules that need to be implemented. Decoupling of code will ensure that the code in the system are cleaner, easier to modify when required and easier to adapt and implement for reuse. Dependancy injection also enables the creation of new objects that make use of dependancies.
-\end{flushleft}
+
 
 
